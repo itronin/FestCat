@@ -12,6 +12,11 @@
 		E85827E02300A5C7009E262D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85827DE2300A5C7009E262D /* Main.storyboard */; };
 		E85827E22300A5C8009E262D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85827E12300A5C8009E262D /* Assets.xcassets */; };
 		E85827E52300A5C8009E262D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85827E32300A5C8009E262D /* LaunchScreen.storyboard */; };
+		E85827F32300A659009E262D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85827F22300A659009E262D /* AppDelegate.swift */; };
+		E85827F52300A659009E262D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85827F42300A659009E262D /* ViewController.swift */; };
+		E85827F82300A659009E262D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85827F62300A659009E262D /* Main.storyboard */; };
+		E85827FD2300A65A009E262D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85827FB2300A65A009E262D /* LaunchScreen.storyboard */; };
+		E85828032300A711009E262D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85827E12300A5C8009E262D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +27,23 @@
 		E85827E12300A5C8009E262D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E85827E42300A5C8009E262D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E85827E62300A5C8009E262D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E85827F02300A659009E262D /* FestCatAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FestCatAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85827F22300A659009E262D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E85827F42300A659009E262D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E85827F72300A659009E262D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E85827FC2300A65A009E262D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E85827FE2300A65A009E262D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E85827D42300A5C7009E262D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85827ED2300A659009E262D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +56,9 @@
 		E85827CE2300A5C7009E262D = {
 			isa = PBXGroup;
 			children = (
+				E85828022300A702009E262D /* Shared */,
 				E85827D92300A5C7009E262D /* FestCat */,
+				E85827F12300A659009E262D /* FestCatAdmin */,
 				E85827D82300A5C7009E262D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				E85827D72300A5C7009E262D /* FestCat.app */,
+				E85827F02300A659009E262D /* FestCatAdmin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,11 +78,30 @@
 				E85827DA2300A5C7009E262D /* AppDelegate.swift */,
 				E85827DC2300A5C7009E262D /* ViewController.swift */,
 				E85827DE2300A5C7009E262D /* Main.storyboard */,
-				E85827E12300A5C8009E262D /* Assets.xcassets */,
 				E85827E32300A5C8009E262D /* LaunchScreen.storyboard */,
 				E85827E62300A5C8009E262D /* Info.plist */,
 			);
 			path = FestCat;
+			sourceTree = "<group>";
+		};
+		E85827F12300A659009E262D /* FestCatAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				E85827F22300A659009E262D /* AppDelegate.swift */,
+				E85827F42300A659009E262D /* ViewController.swift */,
+				E85827F62300A659009E262D /* Main.storyboard */,
+				E85827FB2300A65A009E262D /* LaunchScreen.storyboard */,
+				E85827FE2300A65A009E262D /* Info.plist */,
+			);
+			path = FestCatAdmin;
+			sourceTree = "<group>";
+		};
+		E85828022300A702009E262D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E85827E12300A5C8009E262D /* Assets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +124,23 @@
 			productReference = E85827D72300A5C7009E262D /* FestCat.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E85827EF2300A659009E262D /* FestCatAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E85827FF2300A65A009E262D /* Build configuration list for PBXNativeTarget "FestCatAdmin" */;
+			buildPhases = (
+				E85827EC2300A659009E262D /* Sources */,
+				E85827ED2300A659009E262D /* Frameworks */,
+				E85827EE2300A659009E262D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FestCatAdmin;
+			productName = FestCatAdmin;
+			productReference = E85827F02300A659009E262D /* FestCatAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +152,9 @@
 				ORGANIZATIONNAME = "Igor Tro";
 				TargetAttributes = {
 					E85827D62300A5C7009E262D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E85827EF2300A659009E262D = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -113,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				E85827D62300A5C7009E262D /* FestCat */,
+				E85827EF2300A659009E262D /* FestCatAdmin */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +189,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E85827EE2300A659009E262D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85827FD2300A65A009E262D /* LaunchScreen.storyboard in Resources */,
+				E85828032300A711009E262D /* Assets.xcassets in Resources */,
+				E85827F82300A659009E262D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +208,15 @@
 			files = (
 				E85827DD2300A5C7009E262D /* ViewController.swift in Sources */,
 				E85827DB2300A5C7009E262D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85827EC2300A659009E262D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85827F52300A659009E262D /* ViewController.swift in Sources */,
+				E85827F32300A659009E262D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +235,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				E85827E42300A5C8009E262D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E85827F62300A659009E262D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E85827F72300A659009E262D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E85827FB2300A65A009E262D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E85827FC2300A65A009E262D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -314,6 +410,42 @@
 			};
 			name = Release;
 		};
+		E85828002300A65A009E262D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q75K5AYWB;
+				INFOPLIST_FILE = FestCatAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moscowigor.FestNav.FestCatAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E85828012300A65A009E262D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q75K5AYWB;
+				INFOPLIST_FILE = FestCatAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moscowigor.FestNav.FestCatAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +463,15 @@
 			buildConfigurations = (
 				E85827EA2300A5C8009E262D /* Debug */,
 				E85827EB2300A5C8009E262D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E85827FF2300A65A009E262D /* Build configuration list for PBXNativeTarget "FestCatAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85828002300A65A009E262D /* Debug */,
+				E85828012300A65A009E262D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
